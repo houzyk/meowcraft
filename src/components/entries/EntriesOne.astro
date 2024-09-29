@@ -1,6 +1,6 @@
 ---
 
-const { title, url, description, pubDate, author, image, tags } = Astro.props;
+const { title, url, description, pubDate, author, image } = Astro.props;
 ---
 
 <li>
@@ -29,14 +29,6 @@ const { title, url, description, pubDate, author, image, tags } = Astro.props;
           </p>
         </div>
         <p class="mt-4 text-sm text-zinc-500 line-clamp-2">{description}</p>
-
-        <div class="mt-4 flex space-x-2">
-          {
-            tags.map((tag) => (
-              <span class="text-xs font-medium text-black">{tag}</span>
-            ))
-          }
-        </div>
       </div>
     </article>
   </a>
